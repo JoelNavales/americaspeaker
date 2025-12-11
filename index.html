@@ -1,175 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>America First Speaker</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script language="JavaScript" type="text/javascript" src="./script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>America First Speakers</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Oswald:wght@500;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-<body>
-    <section class="header">
-        <nav class="header-nav">
-            <a href="index.html"><img src="./lovable-uploads/flag-removebg-preview.png" alt=""></a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="About.html">ABOUT</a></li>
-                    <li><a href="">SPEAKER</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div>
+  <body>
+    <header style="position: relative">
+      <div class="logo-container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 741 390"
+          class="header-flag-svg"
+        >
+          <rect width="741" height="390" fill="#b22234" />
+          <rect width="741" height="30" y="30" fill="#fff" />
+          <rect width="741" height="30" y="90" fill="#fff" />
+          <rect width="741" height="30" y="150" fill="#fff" />
+          <rect width="741" height="30" y="210" fill="#fff" />
+          <rect width="741" height="30" y="270" fill="#fff" />
+          <rect width="741" height="30" y="330" fill="#fff" />
+          <rect width="296.4" height="210" fill="#3c3b6e" />
+          <g fill="#fff">
+            <g id="s1">
+              <g id="s2">
+                <path
+                  id="s"
+                  d="M24.7 12l2.855 8.789 9.241.001-7.476 5.433 2.855 8.789-7.475-5.433-7.475 5.433 2.855-8.789-7.476-5.433 9.241-.001z"
+                />
+                <use xlink:href="#s" x="49.4" />
+                <use xlink:href="#s" x="98.8" />
+                <use xlink:href="#s" x="148.2" />
+                <use xlink:href="#s" x="197.6" />
+                <use xlink:href="#s" x="247" />
+              </g>
+              <use xlink:href="#s2" y="42" />
+              <use xlink:href="#s2" y="84" />
+              <use xlink:href="#s2" y="126" />
+              <use xlink:href="#s2" y="168" />
+            </g>
+            <g id="s3">
+              <use xlink:href="#s" x="24.7" y="21" />
+              <use xlink:href="#s" x="74.1" y="21" />
+              <use xlink:href="#s" x="123.5" y="21" />
+              <use xlink:href="#s" x="172.9" y="21" />
+              <use xlink:href="#s" x="222.3" y="21" />
+            </g>
+            <use xlink:href="#s3" y="42" />
+            <use xlink:href="#s3" y="84" />
+            <use xlink:href="#s3" y="126" />
+          </g>
+        </svg>
 
-            <button class="nav-burger">
-              <img class="nav-burger-icon" src="./lovable-uploads/hamburger.png" alt="burger">
-            </button>
-        </nav>
-
-        <div class="nav-mobile">
-          <nav class="nav-mobile-nav">
-              <a href="index.html">HOME</a>
-              <a href="About.html">ABOUT</a>
-              <a href="">SPEAKER</a>
-              <a href="">CONTACT</a>
-          </nav>
+        <div class="logo-text">
+          <span class="logo-line">AMERICA FIRST</span>
+          <span class="logo-line">SPEAKERS</span>
         </div>
-                                              
-       <section class="hero" aria-labelledby="hero-title">
-  <div class="hero-inner">
-    <h1 id="hero-title" class="hero-title">
-      Inspiring Conservative Values in America
-    </h1>
+      </div>
 
-    <a class="hero-cta" href="#book">Book a Speaker</a>
-  </div>
-</section>
+      <div class="nav-container">
+        <div class="hamburger" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
 
-<section class="featured" aria-labelledby="featured-title">
-  <h2 id="featured-title" class="fs-title">Featured Speakers</h2>
+        <ul class="nav-links" id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="#">Speaker</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="contact-info">
+          +1 123 435 658 &nbsp;•&nbsp; howdy@americafirstspeakers.com
+        </div>
+      </div>
+    </header>
 
-  <ul class="speaker-grid" role="list">
-    <li class="speaker-card">
-      <img class="speaker-photo" src="./lovable-uploads/tucker.png" alt="Tucker">
-      <h3 class="speaker-name">Tucker</h3>
-      <p class="speaker-tag">Speaker 1</p>
-    </li>
-
-    <li class="speaker-card">
-      <img class="speaker-photo" src="./lovable-uploads/charlie.png" alt="Charlie">
-      <h3 class="speaker-name">Charlie</h3>
-      <p class="speaker-tag">Speakers</p>
-    </li>
-
-    <li class="speaker-card">
-      <img class="speaker-photo" src="img/ryan.jpg" alt="Headshot of Ryan Mitchell">
-      <h3 class="speaker-name">Ryan Mitchell</h3>
-      <p class="speaker-tag">Conservative economist.</p>
-    </li>
-  </ul>
-
-  <div class="fs-cta">
-    <a class="btn-pale" href="#speakers">View All Speakers</a>
-  </div>
-</section>
-<section class="cta-band" aria-label="Make Fundraising Entertaining Again">
-  <div class="cta-wrap">
-    <h2 class="cta-line">Make Fundraising<br>Entertaining Again</h2>
-
-    <div class="cta-stars" aria-hidden="true">
-      <!-- 4 stars -->
-      <svg class="star" viewBox="0 0 24 24"><path d="M12 .9l3.1 6.3 7 .9-5 4.8 1.2 6.9L12 16.9 5.7 19.8 6.9 13 2 8.1l7-.9L12 .9z"/></svg>
-      <svg class="star" viewBox="0 0 24 24"><path d="M12 .9l3.1 6.3 7 .9-5 4.8 1.2 6.9L12 16.9 5.7 19.8 6.9 13 2 8.1l7-.9L12 .9z"/></svg>
-      <svg class="star" viewBox="0 0 24 24"><path d="M12 .9l3.1 6.3 7 .9-5 4.8 1.2 6.9L12 16.9 5.7 19.8 6.9 13 2 8.1l7-.9L12 .9z"/></svg>
-      <svg class="star" viewBox="0 0 24 24"><path d="M12 .9l3.1 6.3 7 .9-5 4.8 1.2 6.9L12 16.9 5.7 19.8 6.9 13 2 8.1l7-.9L12 .9z"/></svg>
+    <div class="ticker-wrap">
+      <div class="ticker">
+        Trusted speakers that move crowds and contributions • Building the red
+        wave, one speech at a time • Inspiring Conservative Values • Trusted
+        speakers that move crowds and contributions • Building the red wave
+      </div>
     </div>
-  </div>
-</section>
+
+    <section class="hero">
+      <h1>Inspiring Conservative Values in America</h1>
+      <a href="#" class="btn-red">Book a Speaker</a>
     </section>
- 
-<footer class="site-footer">
-  <div class="foot-wrap">
-    <!-- Col 1: Brand + contact -->
-    <section class="foot-col">
-      <h3 class="foot-brand">America First Speakers</h3>
-      <p class="foot-note">America's premier conservative speakers bureau.</p>
 
-      <ul class="foot-contact" role="list">
-        <li>
-          <svg class="ico" viewBox="0 0 24 24"><path d="M22 16.9v2a2 2 0 0 1-2.2 2A18 18 0 0 1 3 4.2 2 2 0 0 1 5 2h2a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2L8 9a14.5 14.5 0 0 0 7 7l.7-1.1a2 2 0 0 1 2-.5c.8.3 1.7.5 2.6.6A2 2 0 0 1 22 16.9Z" fill="none"/></svg>
-          <a href="tel:+13108778736">(310) 877-8736</a>
-        </li>
-        <li>
-          <svg class="ico" viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 6l8 7 8-7" fill="none"/></svg>
-          <a href="mailto:howdy@americafirstspeakers.com">howdy@americafirstspeakers.com</a>
-        </li>
-      </ul>
+    <section class="speakers-section">
+      <h2 class="section-header">Featured Speakers</h2>
 
-      <div class="foot-social" aria-label="Social links">
-        <a href="#" aria-label="Facebook" class="soc"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v3H8v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1Z"/></svg></a>
-        <a href="#" aria-label="X" class="soc"><svg viewBox="0 0 24 24"><path d="M3 3l8 9-8 9h3l6-7 6 7h3l-8-9 8-9h-3l-6 7-6-7H3Z"/></svg></a>
-        <a href="#" aria-label="Instagram" class="soc"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" ry="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-        <a href="#" aria-label="LinkedIn" class="soc"><svg viewBox="0 0 24 24"><path d="M4 4h4v16H4zM9 10h4v2c.7-1 2-2 4-2 3 0 5 2 5 6v4h-4v-4c0-2-1-3-3-3s-2 .9-2 3v4H9V10Z"/></svg></a>
-        <a href="#" aria-label="YouTube" class="soc"><svg viewBox="0 0 24 24"><path d="M23 12s0-4-1-5c-1-1-3-1-3-1H5s-2 0-3 1-1 5-1 5 0 4 1 5 3 1 3 1h14s2 0 3-1 1-5 1-5Z"/><path d="M10 15l5-3-5-3v6z" fill="#fff"/></svg></a>
+      <div class="speaker-grid">
+        <div class="speaker-card">
+          <div class="img-container">
+            <img src="/assets/tucker.png" alt="Tucker Carlson Placeholder" />
+          </div>
+          <h3 class="speaker-name">Tucker Carlson</h3>
+          <p class="speaker-title">Conservative Political Commentator</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="img-container">
+            <img src="/assets/michael.png" alt="Charlie Kirk Placeholder" />
+          </div>
+          <h3 class="speaker-name">Mike</h3>
+          <p class="speaker-title">Author and Media Personality</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="img-container">
+            <img src="/assets/matt.jpg" alt="Mike Johnson Placeholder" />
+          </div>
+          <h3 class="speaker-name">Matt Walsh</h3>
+          <p class="speaker-title">Former RNC Chairman & Political Analyst</p>
+        </div>
+      </div>
+
+      <a href="#" class="btn-beige">View All Speakers</a>
+    </section>
+
+    <section class="fundraising-section">
+      <h2 class="fundraising-header">
+        Make Fundraising<br />Entertaining Again
+      </h2>
+
+      <div class="stars">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="star-svg"
+        >
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="star-svg"
+        >
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="star-svg"
+        >
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="star-svg"
+        >
+          <path
+            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+          />
+        </svg>
+      </div>
+
+      <section class="news-section">
+        <h2 class="section-header">Latest News & Insights</h2>
+        <p class="section-sub">
+          Quick reads from our team and featured voices.
+        </p>
+
+        <div class="news-grid">
+          <a href="#" class="news-card">
+            <div class="news-img-wrap">
+              <span class="category-tag">Politics</span>
+              <img
+                src="/assets/article3.jpg"
+                alt="News Image"
+              />
+            </div>
+            <div class="news-content">
+              <div class="news-date">Oct 12, 2025</div>
+              <h3 class="news-title">
+                Trump's First 100 Days: What to Expect in the Second Term
+              </h3>
+              <p class="news-excerpt">
+                A deep dive into the proposed policies and executive orders
+                planned for the upcoming administration...
+              </p>
+              <span class="read-more">
+                Read Article
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="arrow-svg"
+                >
+                  <path
+                    d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="#" class="news-card">
+            <div class="news-img-wrap">
+              <span class="category-tag">Events</span>
+              <img
+                src="/assets/article2.jpg"
+                alt="News Image"
+              />
+            </div>
+            <div class="news-content">
+              <div class="news-date">Sep 28, 2025</div>
+              <h3 class="news-title">
+                Express Gratitude: Support Speaker Tucker Carlson's Mission
+              </h3>
+              <p class="news-excerpt">
+                Join us today in sending a letter of thanks to the Speaker for
+                his unwavering commitment to conservative values...
+              </p>
+              <span class="read-more">
+                Read Article
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="arrow-svg"
+                >
+                  <path
+                    d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="#" class="news-card">
+            <div class="news-img-wrap">
+              <span class="category-tag">Opinion</span>
+              <img
+                src="/assets/article1.jpg"
+                alt="News Image"
+              />
+            </div>
+            <div class="news-content">
+              <div class="news-date">Aug 15, 2025</div>
+              <h3 class="news-title">
+                Express Gratitude: Support Speaker Mike Johnson and his team
+              </h3>
+              <p class="news-excerpt">
+                New polling data suggests a massive shift in voting patterns
+                among young Americans leaving the coastal cities...
+              </p>
+              <span class="read-more">
+                Read Article
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="arrow-svg"
+                >
+                  <path
+                    d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <h3 class="categories-title">Speaker Categories</h3>
+      <p class="categories-sub">
+        From political leaders to media personalities, find the perfect voice
+        for your event.
+      </p>
+    </section>
+    <section class="categories-section">
+      <h2 class="categories-title">Speaker Categories</h2>
+      <p class="categories-sub">
+        From political leaders to media personalities, find the perfect voice.
+      </p>
+
+      <div class="category-grid">
+        <a href="#" class="cat-card">
+          <div class="cat-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zm0 9l2-1v6h2v-5l2-1v6h2v-6l2-1v7H4v-7l2 1v6h2v-6l2 1v5h2V11l-2 1z"
+              />
+            </svg>
+          </div>
+          <h3>Political Leaders</h3>
+          <span class="link-text">Browse Talent</span>
+        </a>
+
+        <a href="#" class="cat-card">
+          <div class="cat-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"
+              />
+              <path
+                d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"
+              />
+            </svg>
+          </div>
+          <h3>Media Personalities</h3>
+          <span class="link-text">Browse Talent</span>
+        </a>
+
+        <a href="#" class="cat-card">
+          <div class="cat-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+          </div>
+          <h3>Faith & Family</h3>
+          <span class="link-text">Browse Talent</span>
+        </a>
+
+        <a href="#" class="cat-card">
+          <div class="cat-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2l-9.5 4.5v6c0 5.25 3.99 10.16 9.5 11.5 5.51-1.34 9.5-6.25 9.5-11.5v-6L12 2zm0 4l2.5 6.5h-5L12 6z"
+              />
+            </svg>
+          </div>
+          <h3>Military & Heroes</h3>
+          <span class="link-text">Browse Talent</span>
+        </a>
       </div>
     </section>
 
-    <!-- Col 2 -->
-    <nav class="foot-col">
-      <h4>Speaker Categories</h4>
-      <ul role="list" class="foot-links">
-        <li><a href="#">Media Personalities</a></li>
-        <li><a href="#">Conservative Activists</a></li>
-        <li><a href="#">Political Leaders</a></li>
-        <li><a href="#">Military & Veteran Speakers</a></li>
-        <li><a href="#">Political Analysts</a></li>
-        <li><a href="#">Legal & Policy Experts</a></li>
-      </ul>
-    </nav>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <div class="logo-container">
+            <div class="logo-text">
+              <span class="logo-line" style="color: white; font-size: 1.4rem"
+                >AMERICA FIRST</span
+              >
+              <span class="logo-line" style="color: white; font-size: 1.4rem"
+                >SPEAKERS</span
+              >
+            </div>
+          </div>
+          <p class="footer-desc">
+            Connecting patriots with the voices that matter. The premier bureau
+            for conservative thought leaders.
+          </p>
+        </div>
 
-    <!-- Col 3 -->
-    <nav class="foot-col">
-      <h4>More Categories</h4>
-      <ul role="list" class="foot-links">
-        <li><a href="#">Conservative Authors</a></li>
-        <li><a href="#">Talk Radio Hosts</a></li>
-        <li><a href="#">Conservative CEOs</a></li>
-        <li><a href="#">Faith-Based Leaders</a></li>
-        <li><a href="#">Conservative Comedians</a></li>
-        <li><a href="#">Fundraising Auctioneers</a></li>
-      </ul>
-    </nav>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Featured Speakers</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
 
-    <!-- Col 4 -->
-    <nav class="foot-col">
-      <h4>Quick Links</h4>
-      <ul role="list" class="foot-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Speakers</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">How to Book</a></li>
-      </ul>
-    </nav>
-  </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="contact-list">
+            <li>Howdy@americafirstspeakers.com</li>
+            <li>+1 (123) 435-658</li>
+            <li>Washington, D.C.</li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="footer-bottom">
+        <p>&copy; 2025 America First Speakers. All Rights Reserved.</p>
+      </div>
+    </footer>
 
+    <script>
+      const menu = document.querySelector("#mobile-menu");
+      const navList = document.querySelector("#nav-list");
 
-  
-  <hr class="foot-rule" />
-
-  <div class="foot-legal">
-    <p>© 2024 America First Speakers. All rights reserved.</p>
-    <nav class="foot-legal-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Booking Terms</a>
-    </nav>
-  </div>
-</footer>
-
-</body>
+      menu.addEventListener("click", function () {
+        menu.classList.toggle("is-active");
+        navList.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>

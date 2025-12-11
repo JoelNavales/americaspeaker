@@ -1,0 +1,174 @@
+/* --- ABOUT PAGE SPECIFIC STYLES --- */
+
+/* 1. Page Hero (Different from Home Hero) */
+.page-hero {
+  background:
+    url("https://images.unsplash.com/photo-1523689445206-8d5f307374a3?q=80&w=1920&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  height: 20vh; /* Shorter than home page hero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.hero-content h1 {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* 2. Story Section (Split Layout) */
+.story-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.story-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.section-title {
+  font-family: var(--font-head);
+  font-size: 2.2rem;
+  color: var(--primary-navy);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Optional: Add a red underline to titles */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-red);
+  margin-top: 10px;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.story-image {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Values Section */
+.values-section {
+ background: rgba(255,251,240,0.85); 
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.center-text::after {
+  margin: 10px auto; 
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+
+.value-card {
+  padding: 30px;
+  border-radius: 8px;
+  background: white;
+  transition: transform 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-navy);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: var(--accent-red);
+  margin-bottom: 20px;
+  /* If using FontAwesome, this works. If using SVGs, adjust size here */
+  height: 50px;
+}
+
+.value-card h3 {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  color: var(--primary-navy);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 4. CTA Banner */
+.cta-banner {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta-banner h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cta-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  .story-container {
+    flex-direction: column;
+  }
+
+  .story-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.8rem;
+  }
+}
