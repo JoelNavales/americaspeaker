@@ -1,0 +1,413 @@
+/* --- SPEAKER PROFILE STYLES --- */
+
+/* 1. Profile Hero */
+.profile-hero {
+    /* Added top padding to clear header */
+    padding: 120px 20px 80px 20px;
+    min-height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center; 
+    gap: 60px;
+    background: rgba(255, 255, 255, 0.95); 
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+}
+
+.profile-image {
+    flex: 1 1 400px; 
+    max-width: 500px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px var(--primary-navy); 
+    display: block;
+}
+
+.profile-info {
+    flex: 1 1 500px;
+}
+
+.profile-tag {
+    background-color: #EFE8D0;
+    color: var(--primary-navy);
+    padding: 8px 16px;
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.profile-info h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 4rem); 
+    color: var(--primary-navy);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.bio-short {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 35px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    padding: 14px 35px;
+    border: 2px solid var(--primary-navy);
+    color: var(--primary-navy);
+    font-family: var(--font-head);
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-navy);
+    color: white;
+}
+
+/* 2. Full Bio Section */
+.bio-section {
+    background-color: white;
+    padding: 80px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.bio-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bio-content h2 {
+    font-family: var(--font-head);
+    font-size: 2rem;
+    color: var(--primary-navy);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid var(--accent-red);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.bio-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-num {
+    display: block;
+    font-family: var(--font-head);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-red);
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* 3. Pricing Section */
+.pricing-section {
+    padding: 100px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* FIXED: Explicit styling for the title to prevent overlap */
+.pricing-section .section-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--primary-navy);
+    margin-bottom: 15px; /* Pushes the subtitle down */
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.section-sub {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 80px; /* More space before cards */
+    display: block;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center; /* Changed from stretch to center */
+}
+
+.price-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 50px 30px;
+    position: relative;
+    transition: transform 0.3s;
+    flex: 1; 
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.price-card.featured {
+    border: 3px solid var(--primary-navy);
+    background-color: #fffcf5;
+    transform: scale(1.05); 
+    z-index: 2;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.price-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+/* FIXED: Adjusted Popular Tag position */
+.popular-tag {
+    position: absolute;
+    top: -18px; /* Pulled up slightly higher */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-navy);
+    color: white;
+    padding: 8px 24px;
+    font-family: var(--font-head);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px; /* More rounded */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    white-space: nowrap;
+}
+
+.price-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.price-header h3 {
+    font-family: var(--font-head);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.price {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-navy);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.price-sub {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+}
+
+.price-features {
+    text-align: left;
+    margin-bottom: 40px;
+    list-style: none;
+    flex-grow: 1; 
+}
+
+.price-features li {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.price-features li i {
+    color: var(--accent-red);
+    font-size: 1.1rem;
+}
+
+.btn-book {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: 700;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-family: var(--font-head);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-book:hover {
+    background-color: #ddd;
+}
+
+.btn-book.btn-red {
+    background-color: var(--accent-red);
+    color: white;
+}
+
+.btn-book.btn-red:hover {
+    background-color: #cc0000;
+}
+
+/* 4. Booking Form */
+.booking-form-section {
+    background-color: var(--bg-cream);
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-wrapper {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-wrapper h2 {
+    font-family: var(--font-serif);
+    color: var(--primary-navy);
+    margin-bottom: 15px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form-wrapper p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: var(--primary-navy);
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: var(--font-body);
+    background-color: #fafafa;
+}
+
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: var(--primary-navy);
+    background-color: white;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .profile-hero {
+        padding-top: 50px;
+    }
+    
+    .profile-container {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .profile-image {
+        max-width: 100%;
+    }
+    
+    .profile-image img {
+        box-shadow: none; 
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .stats-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .price-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .price-card.featured {
+        transform: scale(1);
+        order: -1; 
+    }
+}

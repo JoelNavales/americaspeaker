@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speaker Profile | America First Speakers</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="speaker-detail.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Oswald:wght@500;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 741 390"
+          class="header-flag-svg"
+        >
+          <rect width="741" height="390" fill="#b22234" />
+          <rect width="741" height="30" y="30" fill="#fff" />
+          <rect width="741" height="30" y="90" fill="#fff" />
+          <rect width="741" height="30" y="150" fill="#fff" />
+          <rect width="741" height="30" y="210" fill="#fff" />
+          <rect width="741" height="30" y="270" fill="#fff" />
+          <rect width="741" height="30" y="330" fill="#fff" />
+          <rect width="296.4" height="210" fill="#3c3b6e" />
+          <g fill="#fff">
+            <g id="s1">
+              <g id="s2">
+                <path
+                  id="s"
+                  d="M24.7 12l2.855 8.789 9.241.001-7.476 5.433 2.855 8.789-7.475-5.433-7.475 5.433 2.855-8.789-7.476-5.433 9.241-.001z"
+                />
+                <use xlink:href="#s" x="49.4" />
+                <use xlink:href="#s" x="98.8" />
+                <use xlink:href="#s" x="148.2" />
+                <use xlink:href="#s" x="197.6" />
+                <use xlink:href="#s" x="247" />
+              </g>
+              <use xlink:href="#s2" y="42" />
+              <use xlink:href="#s2" y="84" />
+              <use xlink:href="#s2" y="126" />
+              <use xlink:href="#s2" y="168" />
+            </g>
+            <g id="s3">
+              <use xlink:href="#s" x="24.7" y="21" />
+              <use xlink:href="#s" x="74.1" y="21" />
+              <use xlink:href="#s" x="123.5" y="21" />
+              <use xlink:href="#s" x="172.9" y="21" />
+              <use xlink:href="#s" x="222.3" y="21" />
+            </g>
+            <use xlink:href="#s3" y="42" />
+            <use xlink:href="#s3" y="84" />
+            <use xlink:href="#s3" y="126" />
+          </g>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-line">AMERICA FIRST</span>
+          <span class="logo-line">SPEAKERS</span>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <div class="hamburger" id="mobile-menu">
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-list">
+         <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="speaker.html">Speaker</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="profile-hero">
+      <div class="profile-container">
+        <div class="profile-image">
+          <img id="sp-image" src="" alt="Speaker Image" />
+        </div>
+        <div class="profile-info">
+          <span class="profile-tag" id="sp-tag">Tagline</span>
+          <h1 id="sp-name">Speaker Name</h1>
+          <p class="bio-short" id="sp-short-bio">Short bio goes here...</p>
+          <div class="hero-btns">
+            <a href="#pricing" class="btn-red">View Services & Pricing</a>
+            <a href="#bio" class="btn-outline">Read Full Bio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bio-section" id="bio">
+      <div class="bio-content">
+        <h2>About The Speaker</h2>
+        <div id="sp-full-bio">
+          <p>Full biography content...</p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-num" id="sp-stat1">20+</span>
+            <span class="stat-label">Years Exp</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" id="sp-stat2">#1</span>
+            <span class="stat-label">Best Seller</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" id="sp-stat3">5M+</span>
+            <span class="stat-label">Followers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+      <h2 class="section-title">Speaking Services & Fees</h2>
+      <p class="section-sub">
+        Transparent pricing packages for your next event.
+      </p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-header">
+            <h3>Virtual Keynote</h3>
+            <div class="price" id="price-1">$50k</div>
+            <span class="price-sub">Starting at</span>
+          </div>
+          <ul class="price-features">
+            <li>45-Minute Live Stream</li>
+            <li>15-Minute Q&A</li>
+            <li>Recording Rights</li>
+          </ul>
+          <a href="#contact" class="btn-book">Book Virtual</a>
+        </div>
+
+        <div class="price-card featured">
+          <div class="popular-tag">Most Popular</div>
+          <div class="price-header">
+            <h3>Live Keynote</h3>
+            <div class="price" id="price-2">$100k</div>
+            <span class="price-sub">Plus Travel Expenses</span>
+          </div>
+          <ul class="price-features">
+            <li>60-Minute Keynote Speech</li>
+            <li>VIP Meet & Greet (30 Mins)</li>
+            <li>Signed Book Availability</li>
+          </ul>
+          <a href="#contact" class="btn-book btn-red">Inquire Availability</a>
+        </div>
+
+        <div class="price-card">
+          <div class="price-header">
+            <h3>Fireside Chat</h3>
+            <div class="price" id="price-3">$75k</div>
+            <span class="price-sub">Plus Travel Expenses</span>
+          </div>
+          <ul class="price-features">
+            <li>45-Minute Moderated Discussion</li>
+            <li>Audience Q&A Session</li>
+            <li>Social Media Promotion</li>
+          </ul>
+          <a href="#contact" class="btn-book">Book Chat</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <div class="logo-container">
+            <div class="logo-text">
+              <span class="logo-line" style="color: white; font-size: 1.4rem"
+                >AMERICA FIRST</span
+              >
+              <span class="logo-line" style="color: white; font-size: 1.4rem"
+                >SPEAKERS</span
+              >
+            </div>
+          </div>
+          <p class="footer-desc">
+            Connecting patriots with the voices that matter. The premier bureau
+            for conservative thought leaders.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="speaker.html">Featured Speakers</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul class="contact-list">
+            <li>Howdy@americafirstspeakers.com</li>
+            <li>+1 (123) 435-658</li>
+            <li>Washington, D.C.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 America First Speakers. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // 1. Define the Speaker Data
+      const speakers = {
+        tucker: {
+          name: "Tucker Carlson",
+          tag: "Political Commentator",
+          image: "/assets/tucker.png",
+          shortBio:
+            "The leading voice in conservative media, challenging the status quo and inspiring millions across the nation.",
+          fullBio:
+            "<p>Tucker Carlson is an American conservative political commentator, writer, and television personality. From 2016 to 2023, he hosted the nightly political talk show Tucker Carlson Tonight on Fox News.</p><p>Since then, he has launched his own media network, continuing to drive the national conversation.</p>",
+          stats: ["20+", "#1", "5M+"],
+          prices: ["$50,000", "$100,000", "$75,000"],
+        },
+        mike: {
+          name: "Mike Johnson",
+          tag: "Speaker of the House",
+          image: "/assets/matt.jpg",
+          shortBio:
+            "A dedicated public servant and constitutional lawyer fighting for faith, family, and freedom.",
+          fullBio:
+            "<p>Mike Johnson serves as the Speaker of the United States House of Representatives. A constitutional law attorney by background, he has dedicated his career to defending religious liberty and conservative values.</p>",
+          stats: ["15+", "56th", "High"],
+          prices: ["Contact", "Contact", "Contact"],
+        },
+        newt: {
+          name: "Newt Gingrich",
+          tag: "Former Speaker of the House",
+          image:
+            "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop",
+          shortBio:
+            "One of the most iconic political figures of our time, architect of the Contract with America.",
+          fullBio:
+            "<p>Newt Gingrich is a former Speaker of the House and a New York Times bestselling author. He is recognized globally as an expert on world history, military issues, and international affairs.</p>",
+          stats: ["40+", "NYT", "Global"],
+          prices: ["$40,000", "$85,000", "$60,000"],
+        },
+        megyn: {
+          name: "Megyn Kelly",
+          tag: "Journalist & Podcast Host",
+          image:
+            "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
+          shortBio:
+            "A fearless journalist asking the tough questions that matter to Americans today.",
+          fullBio:
+            "<p>Megyn Kelly is a journalist and attorney who currently hosts The Megyn Kelly Show. She rose to prominence as a news anchor at Fox News and later NBC News.</p>",
+          stats: ["15+", "Top 5", "3M+"],
+          prices: ["$50,000", "$110,000", "$80,000"],
+        },
+        ben: {
+          name: "Ben Shapiro",
+          tag: "Editor Emeritus, Daily Wire",
+          image:
+            "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop",
+          shortBio:
+            "Facts don't care about your feelings. The sharpest debater in the modern conservative movement.",
+          fullBio:
+            "<p>Ben Shapiro is the founding editor-in-chief of The Daily Wire and host of The Ben Shapiro Show, the top conservative podcast in the nation.</p>",
+          stats: ["10+", "#1 Pod", "6M+"],
+          prices: ["$60,000", "$125,000", "$90,000"],
+        },
+        vivek: {
+          name: "Vivek Ramaswamy",
+          tag: "Entrepreneur & Author",
+          image:
+            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop",
+          shortBio:
+            "An anti-woke crusader and successful biotech entrepreneur taking on the corporate elite.",
+          fullBio:
+            "<p>Vivek Ramaswamy is an American entrepreneur and author of 'Woke, Inc.'. He has been a prominent voice criticizing the influence of ESG and woke ideology in corporate America.</p>",
+          stats: ["$1B+", "Author", "2M+"],
+          prices: ["$45,000", "$95,000", "$70,000"],
+        },
+        candace: {
+          name: "Candace Owens",
+          tag: "Political Commentator",
+          image:
+            "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop",
+          shortBio:
+            "Fearless cultural critic encouraging Americans to think for themselves.",
+          fullBio:
+            "<p>Candace Owens is a conservative author, talk show host, and political commentator. She is the author of 'Blackout' and a prominent voice in the BLEXIT movement.</p>",
+          stats: ["5+", "#1", "4M+"],
+          prices: ["$40,000", "$80,000", "$60,000"],
+        },
+      };
+
+      // 2. Logic to Parse URL and Update Page
+      window.onload = function () {
+        // Get ID from URL (e.g., ?id=tucker)
+        const params = new URLSearchParams(window.location.search);
+        const speakerId = params.get("id");
+
+        // Find speaker in our 'database' above, default to 'tucker' if not found
+        const data = speakers[speakerId] || speakers["tucker"];
+
+        // Update HTML Elements
+        document.getElementById("sp-name").innerText = data.name;
+        document.getElementById("sp-tag").innerText = data.tag;
+        document.getElementById("sp-image").src = data.image;
+        document.getElementById("sp-short-bio").innerText = data.shortBio;
+        document.getElementById("sp-full-bio").innerHTML = data.fullBio;
+
+        // Update Stats
+        document.getElementById("sp-stat1").innerText = data.stats[0];
+        document.getElementById("sp-stat2").innerText = data.stats[1];
+        document.getElementById("sp-stat3").innerText = data.stats[2];
+
+        // Update Prices
+        document.getElementById("price-1").innerText = data.prices[0];
+        document.getElementById("price-2").innerText = data.prices[1];
+        document.getElementById("price-3").innerText = data.prices[2];
+
+        // Update Page Title
+        document.title =
+          data.name + " - Speaker Profile | America First Speakers";
+      };
+
+      // Hamburger Menu Logic
+      const menu = document.querySelector("#mobile-menu");
+      const navList = document.querySelector("#nav-list");
+      menu.addEventListener("click", function () {
+        menu.classList.toggle("is-active");
+        navList.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

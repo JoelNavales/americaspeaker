@@ -1,0 +1,116 @@
+/* --- SPEAKER PAGE STYLES --- */
+
+/* 1. Hero Section */
+.speaker-hero {
+    /* Different background image for variety */
+    background: linear-gradient(rgba(28, 43, 75, 0.9), rgba(28, 43, 75, 0.8)), 
+                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920&auto=format&fit=crop'); 
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+/* 2. Filter & Search Bar */
+.filter-section {
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0; /* Keeps filter bar accessible if you want, or remove if annoying */
+    z-index: 90;
+}
+
+.filter-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input, .category-select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.search-input {
+    flex: 2; /* Takes up more space */
+}
+
+.category-select {
+    flex: 1;
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+.btn-filter {
+    padding: 12px 30px;
+    background-color: var(--primary-navy);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-head);
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-filter:hover {
+    background-color: var(--accent-red);
+}
+
+/* 3. Directory Grid Layout */
+.speaker-directory {
+    padding: 60px 20px 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The Grid itself reuses .speaker-grid from style.css, 
+   but we can add page-specific tweaks here if needed */
+
+/* Mobile Responsiveness for Filter Bar */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .search-input, .category-select, .btn-filter {
+        width: 100%;
+    }
+
+    .speaker-hero {
+        height: 30vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
